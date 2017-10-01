@@ -12,7 +12,7 @@ import platform
 '''
 使用 cache 来缓存登陆信息，同时使用控制台登陆
 '''
-console_qr=(False if platform.system() == 'Windows' else True)
+console_qr=(False if platform.system() == 'Windows' else True)#如果出现二维码横向拉长的情况，请将console_qr值设置为1即可
 bot = Bot('bot.pkl', console_qr=console_qr)
 bot.messages.max_history = 0
 
